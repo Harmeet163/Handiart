@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product-Handiart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/hlogo.jpg" width="125px">
+                <h1>Handiart &#8482; </h1>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li> 
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="image/263142.png" width="30px" height="30px"></a>
+            <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+   
+    </div>
+<!---------cart id-->
+<div class="small-container cart-page">
+      <table>
+          <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+          </tr>
+          <tr>
+              <td>
+                 <div class="cart-info">
+                     <img src="image/Grass Roti Box.jpg" width="100%">
+                     <div>
+                         <p>Grass Roti Box</p>
+                         <h5>Price:₹299.00</h5>
+                         <br>
+                         <a href="">Remove</a>
+                     </div>
+                 </div>
+              </td>
+
+              <td><input type="number" value="1"></td>
+              <td>₹299</td>
+          </tr>
+
+          <tr>
+            <td>
+               <div class="cart-info">
+                   <img src="image/Sabai Grass Planter.jpg" width="100%">
+                   <div>
+                       <p>Sabai Grass Planter</p>
+                       <h5>Price:₹500.00</h5>
+                       <br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+            </td>
+
+            <td><input type="number" value="1"></td>
+            <td>₹500</td>
+        </tr>
+
+        <tr>
+            <td>
+               <div class="cart-info">
+                   <img src="image/11.jpg" width="100%">
+                   <div>
+                       <p>Blue Sapphire Blossom Pendant</p>
+                       <h5>Price:₹3000.00</h5>
+                       <br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+            </td>
+
+            <td><input type="number" value="1"></td>
+            <td>₹3000</td>
+        </tr>
+
+      </table>
+      <div class="total-price">
+        <table>
+          <tr>
+              <td>Subtotal</td>
+              <td>₹3799.00</td>
+          </tr>
+          <tr>
+              <td>Tax</td>
+              <td>₹30.00</td>
+          </tr>
+          <tr>
+              <td>Total</td>
+              <td>₹3829.00</td>
+          </tr>
+        </table>
+      </div>
+</div>
+
+
+<!------footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App For Free</h3>
+                <p>Download App for Android and IOS mobile.</p>
+                <div class="app-logo">
+                    <img src="image/play-store.png">
+                    <img src="image/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/hlogo.jpg">
+                <p>Art stands on the shoulders of craft, which means that to get to the art, you must master the craft. If you want to write, practice writing.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Payment</h3>
+                <ul>
+                    <li><i class="fa fa-cc-visa" style="font-size:24px"></i></li>
+                    <li><i class="fa fa-cc-paypal" style="font-size:24px"></i></li>
+                    <li><i class="fa fa-cc-mastercard" style="font-size:24px"></i></li>
+                    <li><i class="fa fa-cc-stripe" style="font-size:24px"></i></li>
+
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Social Media</h3>
+                <ul>
+                    <li> <a href="#" class="fa fa-facebook"> Facebook</a></li>
+                    <li><a href="#" class="fa fa-twitter">Twitter</a></li>
+                    <li><a href="#" class="fa fa-instagram">Instagram</a></li>
+                    <li><a href="#" class="fa fa-snapchat-ghost">Snap</a></li>
+                    <li><a href="#" class="fa fa-pinterest">Pinterest</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> Design by Harmeet Chavda</p>
+    </div>
+</div>
+<!-------js for toggle-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+ 
+
+</body>
+</html>
